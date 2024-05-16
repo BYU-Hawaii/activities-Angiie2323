@@ -12,45 +12,46 @@
   <header>
     <h1>How to Fold a Paper Airplane</h1>
     <nav>
-      <a href="#materials">Materials</a> | <a href="steps">Folding Steps</a> | <a href="#Tip">Tips</a>
-    </nav>
+      <a href="#materials">Materials</a> | <a href=" steps">Folding Steps</a> | <a href="#Tip">Tips</a> 
+    </nav>  <!-- For this line, in the navigation section, the href attribute of the second link was incorrect. It should be #steps instead of steps.-->
   </header>
   <section id="intro">
-    <h2>Introduction
-      <p>Folding a paper airplane is easy and fun! Follow these steps to create your own airplane.</p>
-      <img src="airplane.png" alt="Paper Airplane">
+    <h2>Introduction</h2>
   </section>
+  
+  <p>Folding a paper airplane is easy and fun! Follow these steps to create your own airplane.</p>
+
   <section id=materials>
     <h2>Materials Needed</h2>
     <ul>
       <li>1 sheet of paper</li>
-      <l1>A flat surface to fold the paper</l1>
+      <li>A flat surface to fold the paper</li> <!--For this line, In the materials section, the second list item was incorrectly tagged as <l1>. It should be <li>. -->
     </ul>
   </section>
   <section id="steps">
     <h2>Folding Steps</h2>
-    <ol>
+    <ol> <!--For this line, In the steps section, the list was incorrectly closed with </ul>. It should be </ol>. -->
       <li>Lay the paper on a flat surface.</li>
       <li>Fold the paper in half vertically.</li>
       <li>Unfold the paper and fold each of the top corners into the center line.</li>
       <li>Fold the top edges again to the center.</li>
       <li>Fold the plane in half lengthwise.</li>
       <li>Fold the wings down, matching the top edges of the wings with the bottom edge of the body.</li>
-      </ul>
+    </ol>
   </section>
   <section id="tips">
     <h2>Extra Tips</h2>
     <ul>
       <li>Make sure your folds are as sharp as possible.</li>
       <li>This airplane has stiff wings and can tolerate fast throwing speeds.</li>
+      <li>Throw it as hard as you can for maximum distance and speed.</li> <!--For this line, In the tips section, the third list item was outside the <ul> element. It should be inside the <ul>. -->
     </ul>
-    <li>Throw it as hard as you can for maximum distance and speed.</li>
-  </section>
+    </section>
   <hr>
   <footer>
-    <a herf="www.foldnfly.com">Learn more about paper airplanes</a>
+    <a href="https://www.foldnfly.com">Learn more about paper airplanes</a>
     <p>&copy; 2024</p>
-  </footer>
+  </footer> <!-- In the footer section, the href attribute of the link was missing the http:// protocol. It should be http://www.foldnfly.com.  -->
 </body>
 
 </html>
