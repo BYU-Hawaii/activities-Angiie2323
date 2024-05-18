@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity 6</title>
-
+    
     <style>
+
         body {
             background-color: aqua;
             margin: 0 auto;
@@ -21,29 +22,39 @@
         .chocolate {
             box-shadow: 15px 10px 15px grey;
         }
+        .image-section {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
         footer {
             background-color: rgb(254, 255, 196);
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Added an ID reference */
+        #main-content {
+            margin: 20px;
         }
     </style>
-</head>
 
+</head>
 
 <body>
 
-    <section>
-        <header>
-            <h1>Hot Chocolate Chip Cookies</h1>
-        </header>
-    </section>
+    <header>
+        <h1>Hot Chocolate Chip Cookies</h1>
+    </header>
 
-    <section>
-        <img class="chocolate"src="chocolate chip cookies.jpg"alt="Delicious chocolate cookies">
+    <section id="main-content">
+        <section class="image-section">
+        <img class="chocolate" src="chocolatechipcookies.jpg" alt="Delicious chocolate cookies">
+        </section>
     </section>
 
     <footer>
         <p>&copy; Angelina Basil</p>
     </footer>
-
 
 </body>
 </html>
