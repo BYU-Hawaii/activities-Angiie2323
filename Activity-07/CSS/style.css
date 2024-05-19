@@ -1,0 +1,40 @@
+/* Set the font family for the entire document to 'Segoe UI 14' and Tahoma as a fallback */
+body {
+    font-family: 'Segoe UI 14', Tahoma;
+    /* Set the background color of the body to aqua */
+    background-color: aqua;
+  }
+  
+  /* Set the background color of the header to aquamarine */
+  header {
+    background-color: aquamarine;
+    /* Center the text within the header */
+    text-align: center;
+  }
+  /* Set the color of the h1 element to rebeccapurple and center the text */
+  h1 {
+    color: rebeccapurple;
+    text-align: center;
+  }
+  /* Add a box shadow to elements with the class 'chocolate' */
+  .chocolate {
+    box-shadow: 15px 10px 15px grey;
+  }
+  /* Display elements within the 'image-section' class as a flex container and center them */
+  .image-section {
+    display: flex;
+    justify-content: center;
+    /* Add padding around the elements within the 'image-section' class */
+    padding: 20px;
+  }
+  /* Set the background color of the footer to a shade of brown and center the text */
+  footer {
+    background-color: rgb(168, 131, 28);
+    text-align: center;
+    /* Add padding to the footer */
+    padding: 25px 2;
+  }
+  /* Add a margin around the element with the id 'main-content' */
+  #main-content {
+    margin: 20px;
+  }
