@@ -1,2 +1,2 @@
 # Activities
-IT240 Activities
+IT240 Activities 
