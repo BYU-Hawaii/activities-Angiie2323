@@ -6,13 +6,12 @@
     <title>Activity 5</title>
       
     <style>
-
         body {
-            background-color: aqua;
+            background-color: rgb(147, 241, 241);
             margin: 0 auto;
         }
         header {
-            background-color: aquamarine;
+            background-color: rgb(232, 248, 171);
         }
         h1 {
             color: rebeccapurple;
@@ -30,20 +29,17 @@
         footer {
             background-color: rgb(168, 131, 28);
             text-align: center;
-            padding: 25px 2;
+            padding: 25px 0;
         }
         /* Added an ID reference */
         #main-content {
             margin: 20px;
         }
     </style>
-
 </head>
 <body>
     <!-- Page Header -->
     <header>
-      
-
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -51,10 +47,10 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
     <!-- Main Content Section -->
-    <main>
+    <main id="main-content">
+        <h1>Chocolate Chip Cookies Recipe</h1>
         <h2>Ingredients</h2>
         <ul>
             <li>1 cup unsalted butter, softened</li>
@@ -69,7 +65,6 @@
             <li>2 cups semisweet chocolate chips</li>
             <li>1 cup chopped walnuts (optional)</li>
         </ul>
-
         
         <h2>Steps</h2>
         <ol>
@@ -83,12 +78,14 @@
         </ol>
 
         <!-- Image Section -->
-        <section>
-            <img src= "chocolate chip cookies.jpg" alt="Delicious chocolate cookies out of oven" style="border-radius: 100px;"> 
-        </section>
+        <div class="image-section">
+            <img src="/activities-Angiie2323/Activity-05/chocolate chip cookies.jpg" alt="Delicious chocolate cookies out of oven" class="chocolate" style="border-radius: 100px;">
+        </div>
+    </main>
 
-     <!-- Footer -->
-    <p>Created by ANGELINA BASIL - &copy; <?php echo date("2024"); ?></p>
+    <!-- Footer -->
+    <footer>
+        <p>Created by ANGELINA BASIL - &copy; <script>document.write(new Date().getFullYear());</script></p>
     </footer>
 </body>
 </html>
