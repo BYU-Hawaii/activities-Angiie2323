@@ -6,7 +6,6 @@
     <title>Activity 6</title>
     
     <style>
-
         body {
             background-color: rgb(147, 241, 241);
             margin: 0 auto;
@@ -19,15 +18,15 @@
             color: rgb(7, 14, 34);
             text-align: center;
         }
+        
         /* This style applies a box shadow to the chocolate cookie image */
         .chocolate {
             box-shadow: 15px 10px 15px grey;
         }
         .image-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 150px;
-           
+            display:inline-flex;
+            justify-content:center;
+            padding: 2%;
         }
         footer {
             background-color: rgb(96, 189, 218);
@@ -36,27 +35,49 @@
         }
         /* Added an ID reference */
         #main-content {
-            margin: 20px;
+            margin: 5px;
         }
     </style>
-
 </head>
 
 <body>
-
     <header>
         <h1>Hot Chocolate Chip Cookies</h1>
     </header>
 
     <section id="main-content">
+        <h2>Recipe</h2>
+        <ul>
+            <li>1 cup unsalted butter, softened</li>
+            <li>1 cup white sugar</li>
+            <li>1 cup packed brown sugar</li>
+            <li>2 eggs</li>
+            <li>2 teaspoons vanilla extract</li>
+            <li>3 cups all-purpose flour</li>
+            <li>1 teaspoon baking soda</li>
+            <li>2 teaspoons hot water</li>
+            <li>1/2 teaspoon salt</li>
+            <li>2 cups semisweet chocolate chips</li>
+            <li>1 cup chopped walnuts (optional)</li>
+        </ul>
+
         <section class="image-section">
-        <img class="chocolate" src="chocolatechipcookies.jpg" alt="Delicious chocolate cookies">
+            <h3>Steps</h3>
+            <ol>
+                <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+                <li>Cream together the butter, white sugar, and brown sugar until smooth.</li>
+                <li>Beat in the eggs one at a time, then stir in the vanilla.</li>
+                <li>Dissolve baking soda in hot water and add to the batter along with the salt.</li>
+                <li>Stir in flour, chocolate chips, and nuts (optional).</li>
+                <li>Drop by large spoonfuls onto ungreased pans.</li>
+                <li>Bake for about 10 minutes in the preheated oven, or until edges are nicely browned.</li>
+            </ol>
+            <img class="chocolate" src="chocolatechipcookies.jpg" alt="Delicious chocolate cookies">
         </section>
     </section>
 
     <footer>
         <p>&copy; 2024 Angelina Basil</p>
     </footer>
-
 </body>
 </html>
