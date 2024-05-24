@@ -2,18 +2,18 @@
 body {
     font-family: 'Segoe UI 14', Tahoma;
     /* Set the background color of the body to aqua */
-    background-color: aqua;
+    background-color:  rgb(147, 241, 241);
   }
   
   /* Set the background color of the header to aquamarine */
   header {
-    background-color: aquamarine;
+    background-color: rgb(96, 189, 218);
     /* Center the text within the header */
     text-align: center;
   }
   /* Set the color of the h1 element to rebeccapurple and center the text */
   h1 {
-    color: rebeccapurple;
+    color: rgb(4, 12, 58);
     text-align: center;
   }
   /* Add a box shadow to elements with the class 'chocolate' */
@@ -29,10 +29,10 @@ body {
   }
   /* Set the background color of the footer to a shade of brown and center the text */
   footer {
-    background-color: rgb(168, 131, 28);
+    background-color: rgb(96, 189, 218);
     text-align: center;
     /* Add padding to the footer */
-    padding: 25px 2;
+    padding: 10px 0;
   }
   /* Add a margin around the element with the id 'main-content' */
   #main-content {
