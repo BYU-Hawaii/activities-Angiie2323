@@ -18,7 +18,7 @@ body {
   }
   /* Add a box shadow to elements with the class 'chocolate' */
   .chocolate {
-    box-shadow: 15px 10px 15px grey;
+    box-shadow: 15px 10px 15px rgb(128, 128, 128);
   }
   /* Display elements within the 'image-section' class as a flex container and center them */
   .image-section {
