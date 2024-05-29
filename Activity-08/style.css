@@ -1,0 +1,53 @@
+/* Reset default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav {
+    background-color: #333; /* Dark background color */
+}
+
+nav ul {
+    display: flex; /* Display menu items horizontally */
+    justify-content: center; /* Center-align menu items */
+}
+
+nav ul li {
+    margin: 0 10px; /* Add margin between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    padding: 10px 15px; /* Add padding around text */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+nav ul li a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Dropdown menu */
+nav ul li:hover ul {
+    display: block; /* Display dropdown menu on hover */
+    position: absolute; /* Position dropdown menu absolutely */
+}
+
+nav ul li ul {
+    display: none; /* Hide dropdown menu by default */
+    background-color: #333; /* Dark background color for dropdown */
+    padding: 0;
+    position: absolute;
+}
+
+nav ul li ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 0;
+}
