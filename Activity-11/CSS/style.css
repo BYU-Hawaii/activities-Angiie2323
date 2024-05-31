@@ -1,7 +1,7 @@
 /* Define your grid container */
 .grid-container {
     display: grid; /* Activate grid layout */
-    gap: 10px; /* Uniform gap between grid items */
+    gap: 20px; /* Uniform gap between grid items */
     grid-template-columns: 1fr 2fr 1fr; /* Define columns with fractional units */
     grid-template-rows: 1fr 1fr; /* Define rows with fractional units */
     margin: 20px;
@@ -9,8 +9,8 @@
 
 /* Define your grid items */
 .grid-item {
-    background-color: #b0e0e6;
-    border: 1px solid #000;
+    background-color: #8df7d7;
+    border: 1px solid #f855f8;
     padding: 20px;
     text-align: center;
     font-size: 20px;
