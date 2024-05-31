@@ -1,0 +1,78 @@
+/* Navigation Menu */
+ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float:left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: rgb(247, 245, 230);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #0c5015;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page Sections */
+  header, nav, section, footer {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(224, 231, 154, 0.8);
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  /* Figure and Figcaption */
+  figure {
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgb(104, 170, 182);
+    background-color: rgb(229, 238, 238);
+  }
+  
+  figure img {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 10px black;
+  }
+  
+  figcaption {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(19, 19, 2);
+    margin-top: 10px;
+  }
+  
+  /* Homepage Background */
+  .homepage-background {
+    background-image: url('path/to/your/image.jpg');
+    background-size: contain;
+    background-position: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 0;
+  }
