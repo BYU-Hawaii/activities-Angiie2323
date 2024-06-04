@@ -1,0 +1,33 @@
+body{
+    background-color: bisque;
+    font-size: medium;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+}
+/*change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+h1{
+    font-weight: 200;
+    font-size: large;
+}
+
+@media(mix-width: 768px){
+
+
+
+}
