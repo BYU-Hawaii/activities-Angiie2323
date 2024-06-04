@@ -19,7 +19,7 @@ li{
 }
 /*change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: #0c0a0a;
 }
 h1{
     font-weight: 200;
