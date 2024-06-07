@@ -2,6 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    padding-top: 30px; /* Adjust based on the height of your navbar */
+    
 }
 
 /* Grid container */
@@ -9,67 +11,65 @@ body {
     display: grid;
     grid-template-areas:
         "header"
-        "nav"
         "main"
         "footer";
-    grid-gap: 10px;
-    padding: 10px;
+    grid-gap: 0;
+    padding: 0;
 }
 
 .header {
     grid-area: header;
-    background-color: #f4f4f4;
+    background-color: #3d4570;
     padding: 20px;
     text-align: center;
 }
 
-
+/* New navbar styles */
 .nav {
-    background-color: #703d3d;
     width: 100%;
-    margin: 0;
-    padding: 0 5px;
-    position:top;
+    background-color: #576c92;
+    position: fixed;
     top: 0;
-  }
-  
-  nav li {
-    display: inline;
-    border-right: 1px solid rgb(146, 199, 102);
-  }
-  
-  nav li:last-child {
-    border-right: none;
-  }
-  
-  nav ul {
+    left: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    display: inline-flex;
-    align-items: center;
-  }
-  
-  nav a {
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    display: block;
+    padding: 14px 20px;
+    color: rgb(22, 22, 18);
     text-decoration: none;
-    color: gold;
-    font-weight: bold;
-    padding: 14px 16px;
-  }
-  
-  nav a::hover {
-    background-color: gold;
-    color: #2e1a1a;
-  }
-  
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: rgb(186, 199, 196);
+    color: #201f1f;
+}
 
 .main {
     grid-area: main;
     padding: 20px;
-    background-color: #fff;
+    background-color: #435586;
+    font-style: oblique;
+    color: aliceblue;
 }
 
 .footer {
     grid-area: footer;
-    background-color: #f4f4f4;
+    background-color: #3d4570;
     padding: 10px;
     text-align: center;
 }
@@ -92,21 +92,9 @@ body {
     .grid-container {
         grid-template-areas:
             "header header"
-            "nav main"
+            "main main"
             "footer footer";
         grid-template-columns: 1fr 3fr;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav li {
-        padding: 0;
-        margin: 0 15px;
     }
 
     .gallery-container img {
