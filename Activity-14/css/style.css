@@ -23,27 +23,43 @@ body {
     text-align: center;
 }
 
+
 .nav {
-    grid-area: nav;
-    background-color: #333;
-}
-
-.nav ul {
-    list-style-type: none;
+    background-color: #703d3d;
+    width: 100%;
     margin: 0;
-    padding: 0;
-}
-
-.nav li {
-    text-align: center;
-    padding: 10px;
-}
-
-.nav a {
-    color: rgb(238, 227, 227);
+    padding: 0 5px;
+    position:top;
+    top: 0;
+  }
+  
+  nav li {
+    display: inline;
+    border-right: 1px solid rgb(146, 199, 102);
+  }
+  
+  nav li:last-child {
+    border-right: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  nav a {
     text-decoration: none;
-    display: block;
-}
+    color: gold;
+    font-weight: bold;
+    padding: 14px 16px;
+  }
+  
+  nav a::hover {
+    background-color: gold;
+    color: #2e1a1a;
+  }
+  
 
 .main {
     grid-area: main;
