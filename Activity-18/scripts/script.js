@@ -32,4 +32,5 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         document.getElementById('registrationFeedback').textContent = '';
         document.getElementById('registrationFeedback').style.display = 'none';
     }
-});
+
+    }); 
