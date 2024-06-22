@@ -19,7 +19,8 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: rgba(224, 231, 154, 0.8);
+    background-color: rgba(169, 220, 240, 0.8);
+    width:100%;
 }
 
 header h1 {
@@ -51,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0c5015;
+    background-color: #055153;
 }
 
 /* Main Content */
@@ -143,6 +144,6 @@ footer {
     }
     
     .responsive-image {
-        width: 70%;
+        width: 90%;
     }
 }
