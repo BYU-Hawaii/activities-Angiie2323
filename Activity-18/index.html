@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form Validation</title>
-    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <form id="registrationForm">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <div class="feedback" id="usernameFeedback"></div>
-
+        <input type="text" id="username" name="username"><br><br>
+        <span id="usernameFeedback" style="color: red;"></span>
+    
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <div class="feedback" id="emailFeedback"></div>
-
+        <input type="email" id="email" name="email"><br><br>
+        <span id="emailFeedback" style="color: red;"></span>
+    
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <div class="feedback" id="passwordFeedback"></div>
-
+        <input type="password" id="password" name="password"><br><br>
+        <span id="passwordFeedback" style="color: red;"></span>
+    
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <div class="feedback" id="phoneFeedback"></div>
-        
-        <button type="submit">Register</button>
-        <div class="feedback valid-feedback" id="registrationFeedback"></div>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <span id="phoneFeedback" style="color: red;"></span>
+    
+        <input type="submit" value="Register">
     </form>
+    
+    <div id="registrationFeedback" style="color: green;"></div>
 
     <script src="scripts/script.js"></script>
-
 </body>
 </html>
