@@ -3,31 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game - Fun Zone</title>
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
+        <h1>TIC TAC TOE!</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Play Game</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="game.html">Games</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="memory-game">
-            <h1>Test Your Memory!</h1>
-            <div class="game-container">
-                <!-- Game cards will go here -->
+        <h2>HOW TO PLAY:</h2>
+        <p> Place your cursor in one of the mini squares and tap</p>
+        <p>First person = X , Second person = O </p>
+        <p>Whoever wins, reset the game.</p>
+        
+        <div class="game-container">
+            <div class="game-board">
+                <div class="row">
+                    <div class="cell" id="cell-1"></div>
+                    <div class="cell" id="cell-2"></div>
+                    <div class="cell" id="cell-3"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" id="cell-4"></div>
+                    <div class="cell" id="cell-5"></div>
+                    <div class="cell" id="cell-6"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" id="cell-7"></div>
+                    <div class="cell" id="cell-8"></div>
+                    <div class="cell" id="cell-9"></div>
+                </div>
             </div>
-            <button id="restart">Restart Game</button>
-        </section>
+            <button id="reset-button">Reset</button>
+        </div>
     </main>
+    <script src="scripts/script.js"></script>
+    
     <footer>
-        <p>&copy; 2024 Fun Zone. All rights reserved.</p>
+        <p>&copy; 2024 Fun Website. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
+
 </body>
 </html>

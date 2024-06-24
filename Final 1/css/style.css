@@ -1,93 +1,140 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-nav ul li a {
-  color: rgb(231, 236, 236);
-  text-decoration: none;
-}
-main {
-  flex: 1;
-  padding: 2rem;
-  text-align: center;
-}
-.intro {
-  background-color: #f4f4f4;
-  padding: 2rem;
-  border-radius: 10px;
-}
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #45a049;
-}
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+/* Mobile-first design approach */
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
 }
 
-/* Memory Game Styles */
-#memory-game {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
+/* Body styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Add some padding */
+  }
+
+header h1 {
+    color: white;
+    font-size: 28px;
 }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+/* Main styles */
+main {
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%; /* Make the main content responsive */
+    max-width: 800px; /* Set a maximum width for large screens */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a shadow */
+    display: flex; /* Enable Flexbox for the main content */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
 
 .game-container {
-  display: grid;
-  grid-template-columns: repeat(4, 100px);
-  gap: 10px;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff6f6;
+    border: 1px solid #b95a5a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card {
-  width: 100px;
-  height: 100px;
-  background-color: #f0f0f0;
-  border: 2px solid #4CAF50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  cursor: pointer;
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card.flipped {
-  background-color: #4CAF50;
-  color: white;
+.row {
+    display: flex;
 }
 
-#restart {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
+.cell {
+    width: 50%;
+    height: 60px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    cursor: pointer;
 }
+
+.cell:hover {
+    background-color: #c6daba;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: #86c288;
+    border-radius: 900px;
+    background-color: #110f10;
+    color: #f3e6e6;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: #8b888a;
+}
+
+/* Media Query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Stack navigation items vertically */
+    }
+  
+    /* Adjust the main content width for smaller screens */
+    main {
+      width: 90%;
+    }
+  }
+  
+  /* Media Query for very small screens (e.g., mobile phones) */
+  @media (max-width: 480px) {
+    nav {
+      font-size: 14px; /* Make navigation text smaller */
+    }
+  }
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark gray background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Keep the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+  }
