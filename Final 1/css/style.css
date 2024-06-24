@@ -10,21 +10,24 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-image: url('../images/tic.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
   }
 
+
 /* Header styles */
 header {
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    text-align: center;
-    padding: 5px 0; /* Add some padding */
-  }
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+  color: white;
+  text-align: center;
+  padding: px 0; /* Add some padding */
+}
 
-header h1 {
+header h1,h2,p,li{
     color: white;
     font-size: 28px;
 }
@@ -53,8 +56,8 @@ main {
     margin: 20px 0;
     width: 80%; /* Make the main content responsive */
     max-width: 800px; /* Set a maximum width for large screens */
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a shadow */
+    background-color: rgba(92, 78, 78, 0.5);
+    box-shadow: 0 4px 8px rgba(235, 226, 226, 0.1); /* Add a shadow */
     display: flex; /* Enable Flexbox for the main content */
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
@@ -65,9 +68,9 @@ main {
     max-width: 300px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #fff6f6;
+
     border: 1px solid #b95a5a;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -84,7 +87,7 @@ main {
 .cell {
     width: 50%;
     height: 60px;
-    border: 1px solid #ddd;
+    border: 1px solid #442c2c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +128,7 @@ main {
   /* Media Query for very small screens (e.g., mobile phones) */
   @media (max-width: 480px) {
     nav {
-      font-size: 14px; /* Make navigation text smaller */
+      font-size: 20px; /* Make navigation text smaller */
     }
   }
 /* Footer styles */
@@ -133,7 +136,7 @@ footer {
     background-color: #333; /* Dark gray background */
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     position: fixed; /* Keep the footer at the bottom */
     bottom: 0;
     width: 100%;
