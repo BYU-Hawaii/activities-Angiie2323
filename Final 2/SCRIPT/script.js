@@ -6,6 +6,11 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
     const comments = document.getElementById('comments').value;
     const rating = document.getElementById('rating').value;
 
+    if (!name || !email || !comments || !rating) {
+        document.getElementById('message').textContent = 'Please fill in all fields.';
+        return;
+    }
+
     const feedback = {
         name: name,
         email: email,
@@ -13,18 +18,10 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         rating: rating
     };
 
-    // Retrieve existing feedbacks from local storage or initialize an empty array
     let feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
-
-    // Add the new feedback to the array
     feedbacks.push(feedback);
-
-    // Save the updated feedback array to local storage
     localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
 
-    // Display a thank you message
     document.getElementById('message').textContent = 'Thank you for your feedback!';
-
-    // Clear the form
     document.getElementById('feedbackForm').reset();
 });

@@ -41,21 +41,30 @@ footer {
     width: 100%;
 }
 
+/* Additional styles for the feedback form */
 form {
-    display: flex;
-    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label, input, textarea, select, button {
     margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
 }
 
-@media (min-width: 600px) {
-    nav ul li {
-        margin-right: 2rem;
-    }
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
 
-    main {
-        padding: 5%;
-    }
+button:hover {
+    background-color: #45a049;
 }
