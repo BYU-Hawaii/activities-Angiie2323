@@ -85,7 +85,7 @@ label, input, textarea, select, button {
     margin: 40px auto;
     padding: 20px;
 
-    border: 1px solid #b95a5a;
+    border: 1px solid #dbd813;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -100,28 +100,28 @@ label, input, textarea, select, button {
     .cell {
       width: 50px;
       height: 50px;
-      border: 1px solid black;
+      border: 1px solid rgb(240, 236, 4);
       text-align: center;
       font-size: 24px;
       cursor: pointer;
     }
 
 .cell:hover {
-    background-color: #c6daba;
+    background-color: #70be40;
 }
 
 #reset-button {
     margin-top: 20px;
     padding: 10px 20px;
-    border: #86c288;
+    border: #a6f075;
     border-radius: 900px;
     background-color: #110f10;
-    color: #f3e6e6;
+    color: #faf2f2;
     cursor: pointer;
 }
 
 #reset-button:hover {
-    background-color: #8b888a;
+    background-color: #d65b3c;
 }
 
 /* Media Query for smaller screens (e.g., tablets) */
@@ -147,8 +147,9 @@ footer {
     background-color: #333; /* Dark gray background */
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: 0px ;
     position: fixed; /* Keep the footer at the bottom */
     bottom: 0;
+    height: 10%;
     width: 100%;
   }
