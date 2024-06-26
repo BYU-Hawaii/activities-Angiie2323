@@ -21,7 +21,7 @@ body {
 /* Header styles */
 header {
     background-color: rgba(6, 61, 105, 0.5); /* Transparent overlay */
-    color: white;
+    color: rgb(172, 121, 121);
     text-align: center;
     padding: 10px 0; /* Add some padding */
 }
