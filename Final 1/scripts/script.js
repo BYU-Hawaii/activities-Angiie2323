@@ -16,7 +16,7 @@ function handleCellClick(event) {
         gameBoard[cellIndex] = currentPlayer;
         event.target.textContent = currentPlayer;
         checkForWin();
-        currentPlayer = currentPlayer === 'X'? 'O' : 'X';
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     }
 }
 
@@ -32,11 +32,11 @@ function checkForWin() {
         [0, 4, 8],
         [2, 4, 6]
     ];
-    for (let i = 0; i <winConditions.length; i++) {
-        const condition = winConditions[i];
-        if (gameBoard[condition[0]] === gameBoard[condition[1]] && gameBoard[condition[1]] === gameBoard[condition[2]] && gameBoard[condition[0]] !== '') {
+    for (let i = 0; i < winConditions.length; i++) {
+        const [a, b, c] = winConditions[i];
+        if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
             gameOver = true;
-            alert(`Player ${gameBoard[condition[0]]} wins!`);
+            alert(`Player ${gameBoard[a]} wins!`);
             return;
         }
     }
