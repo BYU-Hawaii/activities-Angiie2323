@@ -1,54 +1,171 @@
-/* Mobile-first styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+/* Mobile-first design approach */
+* {
+    box-sizing: border-box;
+    margin: 10px;
     padding: 10px;
 }
 
+/* Body styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/tic.jpg'); /* Add your background image URL here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Header styles */
 header {
-    background-color: #4CAF50;
+    background-color: rgba(6, 61, 105, 0.5); /* Transparent overlay */
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 10px 0; /* Add some padding */
+}
+
+header h1, h2, p, li {
+    color: white;
+    font-size: 28px;
+    text-align:center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 10;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 1rem;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: rgb(243, 240, 245);
-    text-decoration: none;
-}
-
-main {
-    padding: 5rem;
-}
-
-footer {
-    background-color: #91b8a1;
-    color: #333;
-    text-align: center;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-button {
-    background-color: #4CAF50;
     color: white;
-    border: none;
-    padding: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: rgba(241, 233, 233, 0.2);
+    color: rgb(243, 240, 239);
+  
+}
+/* Main styles */
+main {
+    padding: 1%;
+    margin: 20px 0;
+    width: 100%; /* Make the main content responsive */
+    max-width: 800px; /* Set a maximum width for large screens */
+    background-color: rgba(93, 151, 228, 0.5);
+    box-shadow: 4px 8px rgba(235, 226, 226, 0.1); /* Add a shadow */
+    display:flex; /* Enable Flexbox for the main content */
+    flex-direction:column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    padding-bottom: 10px;
+  }
+
+  /* Additional styles for the feedback form */
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label, input, textarea, select, button {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.hero img {
+  display: block; /* Ensures image is displayed as a block element */
+  margin-top: 10px; /* Adjust margin as needed */
+  max-width: 90%; /* Ensures image does not exceed container width */
+}
+
+
+.game-container {
+    max-width: 500px;
+    margin: 10px;
+    padding: 20px;
+
+    border: 10px solid #dbd813;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ #game-board {
+      display: flex;
+      flex-wrap: wrap;
+      size: 10%;
+    }
+    .row {
+      display: flex;
+    }
+    .cell {
+      width: 50px;
+      height: 50px;
+      border: 1px solid rgb(240, 236, 4);
+      text-align: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+.cell:hover {
+    background-color: #790bd3;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: #50b30e;
+    border-radius: 900px;
+    background-color: #110f10;
+    color: #faf2f2;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+#reset-button:hover {
+    background-color: #d65b3c;
 }
+
+/* Media Query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column; /* Stack navigation items vertically */
+    }
+  
+    /* Adjust the main content width for smaller screens */
+    main {
+      width: 90%;
+    }
+  }
+  
+  /* Media Query for very small screens (e.g., mobile phones) */
+  @media (max-width: 480px) {
+    nav {
+      font-size: 20px; /* Make navigation text smaller */
+    }
+    /* Adjust the main content width for smaller screens */
+main {
+  width: 90%;
+}
+  }
+/* Footer styles */
+footer {
+    background-color: #747e8d; /* Dark gray background */
+    color: #fff;
+    text-align: center;
+    padding: 0px ;
+    position: auto; /* Keep the footer at the bottom */
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+  }
