@@ -29,7 +29,7 @@ header {
 }
 
 header h1, h2, p {
-  color: #eeede9;
+  color: #f0ecf1;
   font-size: 24px;
   text-align: center;
 }
@@ -132,7 +132,7 @@ label, input, textarea, select, button {
   border: 10px solid #dbd813;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.8); /* Add background color */
+  background-color: rgba(43, 37, 37, 0.8); /* Add background color */
 }
 
 #game-board {
@@ -177,7 +177,7 @@ label, input, textarea, select, button {
 
 @keyframes blinker {
   50% {
-      opacity: 0;
+      opacity: 2%;
   }
 }
 

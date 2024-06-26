@@ -8,6 +8,6 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
         alert('Please fill in all fields.');
         return;
     }
-    document.getElementById('message').textContent = 'Thank you for submitting the feedback!';
+    document.getElementById('message').textContent = 'Thank you for submitting your feedback!';
     document.getElementById('feedbackForm').reset();
 });
