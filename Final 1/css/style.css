@@ -20,7 +20,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+    background-color: rgba(6, 61, 105, 0.5); /* Transparent overlay */
     color: white;
     text-align: center;
     padding: 10px 0; /* Add some padding */
@@ -49,17 +49,17 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: yellow;
+    background-color: rgba(241, 233, 233, 0.2);
+    color: rgb(243, 240, 239);
+  
 }
-
 /* Main styles */
 main {
     padding: 20px;
     margin: 20px 0;
     width: 80%; /* Make the main content responsive */
     max-width: 800px; /* Set a maximum width for large screens */
-    background-color: rgba(92, 78, 78, 0.5);
+    background-color: rgba(93, 151, 228, 0.5);
     box-shadow: 0 4px 8px rgba(235, 226, 226, 0.1); /* Add a shadow */
     display: flex; /* Enable Flexbox for the main content */
     flex-direction: column; /* Arrange items vertically */
@@ -82,13 +82,19 @@ label, input, textarea, select, button {
   padding: 0.5rem;
 }
 
+.hero img {
+  display: block; /* Ensures image is displayed as a block element */
+  margin-top: 10px; /* Adjust margin as needed */
+  max-width: 100%; /* Ensures image does not exceed container width */
+}
+
 
 .game-container {
-    max-width: 300px;
-    margin: 40px auto;
+    max-width: 500px;
+    margin: 10px;
     padding: 20px;
 
-    border: 1px solid #dbd813;
+    border: 10px solid #dbd813;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -96,6 +102,7 @@ label, input, textarea, select, button {
  #game-board {
       display: flex;
       flex-wrap: wrap;
+      size: 10%;
     }
     .row {
       display: flex;
@@ -110,13 +117,13 @@ label, input, textarea, select, button {
     }
 
 .cell:hover {
-    background-color: #70be40;
+    background-color: #790bd3;
 }
 
 #reset-button {
     margin-top: 20px;
     padding: 10px 20px;
-    border: #a6f075;
+    border: #50b30e;
     border-radius: 900px;
     background-color: #110f10;
     color: #faf2f2;
@@ -147,7 +154,7 @@ label, input, textarea, select, button {
   }
 /* Footer styles */
 footer {
-    background-color: #333; /* Dark gray background */
+    background-color: #747e8d; /* Dark gray background */
     color: #fff;
     text-align: center;
     padding: 0px ;
