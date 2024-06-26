@@ -16,24 +16,24 @@ body {
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Arrange items vertically */
     align-items: center; /* Center items horizontally */
-  }
-
+}
 
 /* Header styles */
 header {
-  background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
-  color: white;
-  text-align: center;
-  padding: px 0; /* Add some padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Add some padding */
 }
 
-header h1,h2,p,li{
+header h1, h2, p, li {
     color: white;
     font-size: 28px;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -44,11 +44,14 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: yellow;
+}
 
 /* Main styles */
 main {
