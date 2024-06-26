@@ -3,55 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file for styling -->
 </head>
 <body>
-    <h1>PLAY NOW</h1>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="game.html" class = "active">PlayGame</a></li>
+                <li><a href="game.html" class="active">PlayGame</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="fun.html">Facts</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
-    </header>
     <main>
-        <h2>INSTRUCTIONS:</h2>
-        <p>Place your cursor in one of the mini squares and tap. First person = X , Second person = O , Whoever wins, reset the game.</p>
-        
-        <div class="game-container">
-            <div class="game-board">
-                <div class="row">
-                    <div class="cell" id="cell-1"></div>
-                    <div class="cell" id="cell-2"></div>
-                    <div class="cell" id="cell-3"></div>
-                </div>
-                <div class="row">
-                    <div class="cell" id="cell-4"></div>
-                    <div class="cell" id="cell-5"></div>
-                    <div class="cell" id="cell-6"></div>
-                </div>
-                <div class="row">
-                    <div class="cell" id="cell-7"></div>
-                    <div class="cell" id="cell-8"></div>
-                    <div class="cell" id="cell-9"></div>
-                </div>
+        <section class="game-container">
+            <h2>Let's Play Tic Tac Toe!</h2>
+            <div id="game-board">
+                <div id="cell-1" class="cell"></div>
+                <div id="cell-2" class="cell"></div>
+                <div id="cell-3" class="cell"></div>
+                <div id="cell-4" class="cell"></div>
+                <div id="cell-5" class="cell"></div>
+                <div id="cell-6" class="cell"></div>
+                <div id="cell-7" class="cell"></div>
+                <div id="cell-8" class="cell"></div>
+                <div id="cell-9" class="cell"></div>
             </div>
-            <button id="reset-button">Reset</button>
-        </div>
-        
-        <a href="https://www.youtube.com/watch?v=3qzcAMShotQ" class="cta-button">CLICK HERE FOR HELP</a>
-
+            <button id="reset-button">Reset Game</button>
+        </section>
     </main>
-    <script src="scripts/script.js"></script>
-    
     <footer>
         <p>&copy; 2024 Tic-Tac-Toe</p>
     </footer>
-
+    <script src="scripts/script.js"></script> 
 </body>
 </html>

@@ -1,80 +1,107 @@
 /* Mobile-first design approach */
 * {
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Body styles */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('../images/tic.jpg'); /* Add your background image URL here */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the background image */
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/tic.jpg'); /* Add your background image URL here */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
 }
 
 /* Header styles */
 header {
-    background-color: rgba(6, 61, 105, 0.5); /* Transparent overlay */
-    color: white;
-    text-align: center;
-    padding: 10px 0; /* Add some padding */
+  background-color: rgba(6, 61, 105, 0.5); /* Transparent overlay */
+  color: rgb(255, 255, 255);
+  text-align:center;
+  padding: 10px 0; /* Add some padding */
+  width: 100%;
 }
 
-header h1, h2, p, li {
-    color: white;
-    font-size: 28px;
-    text-align:center;
+header h1, h2, p {
+  color: #eeede9;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgba(6, 61, 105, 0.5); /* Transparent overlay */
+  color: white;
+  text-align: center;
+  padding: 10px 0; /* Add some padding */
+  width: 90%;
+  display: flex; /* Make navigation menu horizontal */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgba(6, 61, 105, 0.5);
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the list items */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav li {
+  margin-right: 20px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+nav a {
+  text-decoration: none;
+  color: #fff;
 }
-
-nav ul li a.active,
-nav ul li a:hover {
-    background-color: rgba(241, 233, 233, 0.2);
-    color: rgb(243, 240, 239);
-  
+nav ul li a.active {
+  color: #ffd700;
+  font-weight: bold; /* Make active link bold */
 }
 /* Main styles */
 main {
-    padding: 1%;
-    margin: 20px 0;
-    width: 100%; /* Make the main content responsive */
-    max-width: 800px; /* Set a maximum width for large screens */
-    background-color: rgba(93, 151, 228, 0.5);
-    box-shadow: 4px 8px rgba(235, 226, 226, 0.1); /* Add a shadow */
-    display:flex; /* Enable Flexbox for the main content */
-    flex-direction:column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
-    padding-bottom: 10px;
-  }
+  padding: 2%;
+  margin: 20px 0;
+  width: 100%; /* Make the main content responsive */
+  max-width: 800px; /* Set a maximum width for large screens */
+  background-color: rgba(114, 160, 219, 0.7);
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  display: flex; /* Enable Flexbox for the main content */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  border-radius: 10px; /* Add border radius */
+}
 
-  /* Additional styles for the feedback form */
+/* Additional styles for the feedback form */
 form {
   max-width: 600px;
   margin: auto;
   padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 5px;
+  background-color: #ffefd5;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -84,88 +111,133 @@ label, input, textarea, select, button {
   padding: 0.5rem;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .hero img {
   display: block; /* Ensures image is displayed as a block element */
   margin-top: 10px; /* Adjust margin as needed */
   max-width: 90%; /* Ensures image does not exceed container width */
+  border-radius: 10px; /* Add border radius */
 }
-
 
 .game-container {
-    max-width: 500px;
-    margin: 10px;
-    padding: 20px;
-
-    border: 10px solid #dbd813;
-    border-radius: 0px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 10px;
+  padding: 20px;
+  border: 10px solid #dbd813;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); /* Add background color */
 }
 
- #game-board {
-      display: flex;
-      flex-wrap: wrap;
-      size: 10%;
-    }
-    .row {
-      display: flex;
-    }
-    .cell {
-      width: 50px;
-      height: 50px;
-      border: 1px solid rgb(240, 236, 4);
-      text-align: center;
-      font-size: 24px;
-      cursor: pointer;
-    }
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Add gap between cells */
+  width: 100%;
+  max-width: 300px; /* Set a maximum width for the game board */
+  margin: auto; /* Center the game board */
+}
+
+.cell {
+  width: 100%;
+  padding-top: 100%; /* This maintains a square aspect ratio */
+  position: relative; /* For positioning the content inside */
+  border: 3px solid #dbd813;
+  text-align: center;
+  font-size: 46px; /* Increase font size */
+  cursor: pointer;
+  background-color: #ffffff; /* Add background color */
+  border-radius: 10px; /* Add border radius */
+  transition: background-color 0.3s, transform 0.3s;
+}
 
 .cell:hover {
-    background-color: #790bd3;
+  background-color: #dacf70;
+  transform: scale(1.1);
+}
+
+.cell.win {
+  background-color: yellow;
+  animation: blinker 1s linear infinite;
+}
+
+.cell span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
 }
 
 #reset-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: #50b30e;
-    border-radius: 900px;
-    background-color: #110f10;
-    color: #faf2f2;
-    cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #110f10;
+  color: #faf2f2;
+  cursor: pointer;
+  font-size: 18px; /* Increase font size */
 }
 
 #reset-button:hover {
-    background-color: #d65b3c;
+  background-color: #646d18;
 }
 
 /* Media Query for smaller screens (e.g., tablets) */
 @media (max-width: 768px) {
-    nav {
-      flex-direction: column; /* Stack navigation items vertically */
-    }
-  
-    /* Adjust the main content width for smaller screens */
-    main {
+  nav ul li {
+      display: block; /* Stack navigation items vertically */
+      text-align: center;
+      margin: 10px 0; /* Add margin */
+  }
+
+  main {
       width: 90%;
-    }
   }
-  
-  /* Media Query for very small screens (e.g., mobile phones) */
-  @media (max-width: 480px) {
-    nav {
-      font-size: 20px; /* Make navigation text smaller */
-    }
-    /* Adjust the main content width for smaller screens */
-main {
-  width: 90%;
+
+  #game-board {
+      max-width: 200px; /* Adjust the maximum width for tablets */
+  }
 }
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column; /* Make navigation menu vertical on small screens */
   }
-/* Footer styles */
+  nav ul li {
+    margin-right: 0; /* Remove margin between items on small screens */
+  }
+  nav ul li a {
+    font-size: 16px; /* Make navigation text smaller on small screens */
+    padding: 10px; /* Add padding to navigation links on small screens */
+  }
+  footer {
+    padding: 5px; /* Reduce padding on footer for small screens */
+  }
+}
+
 footer {
-    background-color: #747e8d; /* Dark gray background */
-    color: #fff;
-    text-align: center;
-    padding: 0px ;
-    position: auto; /* Keep the footer at the bottom */
-    bottom: 0;
-    height: 10%;
-    width: 100%;
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #747e8d;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  clear: both; /* Add this to ensure the footer clears any floating elements */
+}

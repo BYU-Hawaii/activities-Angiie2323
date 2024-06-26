@@ -14,7 +14,7 @@ function handleCellClick(event) {
     const cellIndex = parseInt(cellId.replace('cell-', '')) - 1;
     if (gameBoard[cellIndex] === '') {
         gameBoard[cellIndex] = currentPlayer;
-        event.target.textContent = currentPlayer;
+        event.target.innerHTML = currentPlayer === 'X' ? '❌' : '⭕'; // Use emojis
         checkForWin();
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     }
@@ -36,6 +36,9 @@ function checkForWin() {
         const [a, b, c] = winConditions[i];
         if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
             gameOver = true;
+            document.getElementById(`cell-${a + 1}`).classList.add('win');
+            document.getElementById(`cell-${b + 1}`).classList.add('win');
+            document.getElementById(`cell-${c + 1}`).classList.add('win');
             alert(`Player ${gameBoard[a]} wins!`);
             return;
         }
@@ -55,5 +58,6 @@ function resetGame() {
     gameOver = false;
     for (let i = 1; i <= 9; i++) {
         document.getElementById(`cell-${i}`).textContent = '';
+        document.getElementById(`cell-${i}`).classList.remove('win');
     }
 }
